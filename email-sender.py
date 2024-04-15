@@ -4,8 +4,8 @@ from email.mime.text import MIMEText
 import datetime
 
 def send_newsletter(email_list, subject, html_file_path):
-    sender_email = "modestantonny@gmail.com" # Replace with your email
-    sender_password = "mttc iizz uzgl csws" # Replace with your password
+    sender_email = "email@example.com" # Replace with your email
+    sender_password = "password" # Replace with your password
 
     # Set up the SMTP server
     server = smtplib.SMTP(host='smtp.gmail.com', port=587) # this is the default port number and it's recommended here
@@ -32,7 +32,7 @@ def send_newsletter(email_list, subject, html_file_path):
     server.quit()
 
 # Example Usage
-email_list = ["momedhat2005@gmail.com", "anhelina@uni.minerva.edu", "a.soliman@uni.minerva.edu", "jason@uni.minerva.edu", "clara@uni.minerva.edu", "hakkei@uni.minerva.edu"] # Replace with your list of emails
+email_list = ["email1@example.com", "email2@example.com", "example3@example.com"] # Replace with your list of emails
 subject = "Weekly Newsletter - " + datetime.datetime.now().strftime("%Y-%m-%d")
 html_file_path = "email-body.html"
 
